@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Nav from "./Components/Nav";
+import App from "./App";
 import "./index.css"
 
 ReactDOM.render(
-< Nav / >,
+< App / >,
     document.getElementById("root")
 )
 ;

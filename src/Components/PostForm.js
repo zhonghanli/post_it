@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import axios from 'axios';
 import {Typography, TextField, Button} from '@material-ui/core';
+import {connect} from 'react-redux';
+import {create_new_post} from '../ducks/post'
 
 
 
@@ -11,12 +13,7 @@ class PostForm extends Component{
     }
 
     submitForm=()=>{
-        axios.post('http://localhost:8080/createpost',{
-            title: this.state.title,
-            content: this.state.content})
-            .then(res=>{
-                this.props.updateState(res.data.id,res.data.title, res.data.content)
-            })       
+        this.props.create_new_post(this.state.title, this.state.content);
     }
 
     handleContentChange=event=>{
@@ -47,4 +44,10 @@ class PostForm extends Component{
     }
 }
 
-export default PostForm;
+const mapStateToProps = (state) => {
+
+}
+
+export default connect(mapStateToProps, {
+    create_new_post
+})(PostForm);
