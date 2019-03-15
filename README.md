@@ -1,3 +1,14 @@
+Simple React SPA with Spring Boot backend
+
+The application renders some post-its and allows for creation and deletion. The master branch is made using vanilla React while redux_version is the same application implemented using Redux and Thunk to demonstrate why these frameworks may be helpful.
+
+Redux
+Redux is a state management framework typically used for React. It makes application state easier to maintain by having a store where all the data is located, and each component can have access to it. Moving data across siblings and other components can become complex as an application grows, so Redux solves this issue by maintaining a state in a predictable manner. Plugins such as redux devtools allow for easier debugging as well.
+
+Thunk
+Middleware for Redux. Allows for action creators to return functions instead of just actions, allowing for sending asynchronous requests. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
