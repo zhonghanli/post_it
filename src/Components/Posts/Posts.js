@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 class Posts extends Component{
     populateGrid = (posts) =>{
         //Have to check for undefined or else this returns an error - posts has an undefined state?
+        console.log(posts);
         if (posts !== undefined){
             return posts.map((item, index)=>{
                 if(item!=undefined){

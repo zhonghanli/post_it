@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { createStore,combineReducers, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import Nav from './Components/Nav';

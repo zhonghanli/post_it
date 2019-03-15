@@ -21,7 +21,6 @@ class Home extends Component {
                 <Posts ></Posts>
                 <div>
                 <PostForm 
-                    updateState={this.updateState}
                 ></PostForm>
                 </div>
                 
